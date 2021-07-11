@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA API Pictures</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- NASA Favicon -->
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <!-- 'hidden' is a global HTML attribute -->
+    <!-- Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <div class="navigation-container">
+            <span class="background">
+
+            </span>
+            <!-- Results Navigation -->
+            <span class="navigation-items" id="resultsNav">
+                <h3 class="clickable" onclick="updateDOM('favourites')"> Saved Items </h3>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
+                <h3 class="clickable" onclick="getNasaPictures()">Load More Images</h3>
+            </span>
+            <!-- SavedItems -->
+            <span class="navigation-items hidden" id="favouritesNav">
+                <h3 class="clickable" onclick="getNasaPictures()">Load More NASA Images</h3>
+            </span>
+        </div>
+        <!-- Images Container -->
+        <div class="images-container">
+        <!--    <div class="card">
+                <a href="" title="Toggle Full Screen" target="_blank">
+                    <img src="" alt="NASA POTD" class="card-image-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Image Title
+                    </h5>
+                    <p class="clickable">
+                        Add To Saved Items.
+                    </p>
+                    <p class="card-text"></p>
+                    <small class = "text-muted">
+                        <strong>
+                            10/07/2021
+                        </strong>
+                        <span>Copyright Info</span>
+                    </small>
+                </div>
+            </div> 
+        </div>
+    </div> -->
+    <!-- Save Confirmation -->
+    <div class="save-confirmed" hidden>
+        <h2>Added To Saved Items!!</h2>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
